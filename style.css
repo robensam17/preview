@@ -3,14 +3,63 @@ body {
 background-repeat-y: no-repeat;
  /* background-size: 100%; */
  background-position-x: center
+
 }
 html {
   height:200%;
 }
 
+@media (min-width: 992px) {
+.navbar-expand-lg {
+        max-width: 970px!important;
+    }
+}
+
+.navbar-toggler-icon{
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.tex{
+  margin-top: 1085px;
+  background-color: #0a111f;
+  height: 1000px;
+  color: white;
+  padding: 50px 0 0 100px;
+
+}
+.tex2 {
+  color: white;
+  margin: 5%;
+}
+
+.tex3{
+  margin-top: 1085px;
+  background-color: #233134;
+  height: 1000px;
+  color: white;
+  margin:  5% 15%;
+
+}
+
+.con{
+  border: 2px solid;
+      width: 350px;
+      padding: 10px;
+          margin: 0 -10%;
+      }
+
+.con2{
+    margin: 0 0%;
+}
+
+.hoof{
+    margin: 0 -9%;
+}
+
 
 .bg-light {
-  background: rgba(0,0,0,0.4)!important;
+  background: rgba(0,0,0,0.1)!important;
     color: white!important;
 }
 .nav-link {
@@ -23,11 +72,14 @@ html {
 color: white!important;
 }
 
+
+
+
 h4{
   max-width: 75%;
   margin-left: 15%;
   border: 2px white;
-padding-top: 75px;
+  padding-top: 75px;
 }
 
 h5{
@@ -102,6 +154,7 @@ h1.main, p.demos {
 	animation: blurFadeInOut 3s ease-in backwards;
 }
 .sp-container h2.frame-1 {
+
 	-webkit-animation-delay: 0s;
 	-moz-animation-delay: 0s;
 	-ms-animation-delay: 0s;
@@ -163,10 +216,10 @@ h1.main, p.demos {
 	position: absolute;
 
 	height: 273px;
-	left: 50%;
+	/* left: 50%; */
 	top: 50%;
-	margin: -137px 0 0 -141px;
-	background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
+	/* margin: -137px 0 0 -141px; */
+ no-repeat top left;
 	-webkit-animation: fadeInBack 3.6s linear 14s backwards;
 	-moz-animation: fadeInBack 3.6s linear 14s backwards;
 	-ms-animation: fadeInBack 3.6s linear 14s backwards;
