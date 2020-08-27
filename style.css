@@ -258,6 +258,7 @@ h1.main, p.demos {
 	transform: scale(5);
 }
 .sp-circle-link {
+	opacity: 50%;
 	position: absolute;
 	left: 50%;
 	bottom: 100px;
