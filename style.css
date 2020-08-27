@@ -10,10 +10,35 @@ html {
 
 }
 .l{
-  top: 178%!important;
-  left: 15%!important;
+  margin-top: 25px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #3f1616;
+  font-size: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
+@media (max-width: 360px) {
+.frame-5 {
+  top: 140px!important;
+}
+.sp-circle-link {
+  bottom: 10px!important;
+}}
+
+@media (min-width: 1000px) {
+.frame-5 {
+  width: 50%!important;
+ margin-left: 25%!important;
+}}
 
 .flap{
   opacity: 50%;
@@ -237,6 +262,7 @@ h1.main, p.demos {
 	animation-delay: 14s;
 }
 .sp-globe {
+  opacity: 50%;
 	position: absolute;
 	width: 282px;
 	height: 273px;
@@ -258,7 +284,7 @@ h1.main, p.demos {
 	transform: scale(5);
 }
 .sp-circle-link {
-	opacity: 50%;
+      opacity: 50%;
 	position: absolute;
 	left: 50%;
 	bottom: 100px;
@@ -284,6 +310,7 @@ h1.main, p.demos {
 	transform: scale(1) rotate(0deg);
 }
 .sp-circle-link:hover {
+  opacity: 50%;
 	background: #85373b;
 	color: #fff;
 }
