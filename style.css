@@ -28,6 +28,8 @@ html {
 @media (max-width: 360px) {
 .frame-5 {
   top: 140px!important;
+  font-size: 300%!important;
+	
 }
 .sp-circle-link {
   bottom: 10px!important;
@@ -233,7 +235,7 @@ font-size: 300%!important;
 	animation-delay: 9s;
 }
 .sp-container h2.frame-5 {
-  opacity: 70%;
+  opacity: 90%;
   top: 275px;
 	-webkit-animation: none;
 	-moz-animation: none;
