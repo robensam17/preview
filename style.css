@@ -29,8 +29,11 @@ html {
 .frame-5 {
   top: 140px!important;
 	}
-.sp-container h2 h4{
-      font-size: 70px!important;	
+.sp-container h2 {
+	font-size: 80px!important;
+	}		
+.sp-container h4{
+    font-size: 22px!important;
 	}}
 
 .sp-circle-link {
