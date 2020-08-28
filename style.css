@@ -1,7 +1,6 @@
 body {
  background-image: url("images/1.jpg" );
-background-repeat-y: no-repeat;
- /* background-size: 100%; */
+ background-repeat-y: no-repeat;
  background-position-x: center
 
 }
@@ -34,7 +33,7 @@ html {
   bottom: 10px!important;
 }}
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
 .frame-5 {
   width: 50%!important;
  margin-left: 25%!important;
