@@ -28,9 +28,11 @@ html {
 @media (max-width: 360px) {
 .frame-5 {
   top: 140px!important;
-  font-size: 300%!important;
-	
-}
+	}
+.sp-container h2{
+      font-size: 70px!important;	
+	}}
+
 .sp-circle-link {
   bottom: 10px!important;
 }}
