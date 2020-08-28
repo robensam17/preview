@@ -7,8 +7,8 @@ background-repeat-y: no-repeat;
 }
 html {
   height:200%;
-
 }
+
 .l{
   margin-top: 25px;
   position: absolute;
@@ -46,7 +46,6 @@ html {
 }}
 
 
-
 .flap{
   -webkit-animation: blurFadeIn 1s ease-in 1s backwards;
 	-moz-animation: blurFadeIn 1s ease-in 1s backwards;
@@ -62,7 +61,7 @@ html {
     z-index: 111;
 }
 
-}
+
 .navbar-toggler{
 z-index: 33;
 
@@ -272,7 +271,6 @@ font-size: 300%!important;
 	left: 50%;
 	top: 50%;
 	margin: -137px 0 0 -141px;
-	background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
 	-webkit-animation: fadeInBack 3.6s linear 14s backwards;
 	-moz-animation: fadeInBack 3.6s linear 14s backwards;
 	-ms-animation: fadeInBack 3.6s linear 14s backwards;
