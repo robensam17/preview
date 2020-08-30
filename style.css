@@ -8,8 +8,30 @@ html {
   height:200%;
 }
 
+.icon{
+  font-size: 250%;
+}
+
+.list-unstyled {
+  padding: 0 10px;
+}
+
+#sidebar {
+  color: black;
+    margin-top: 300px;
+    background-color: white;
+    height: 300px;
+    opacity: 50%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    animation-name: slideInLeft;
+}
+a{
+  color: black!important;
+}
+
 .l{
-  margin-top: 25px;
+  margin-top: 30px;
   position: absolute;
   left: 50%;
   margin-left: -50px;
@@ -25,13 +47,18 @@ html {
   border-radius: 50%;
 }
 
-@media (max-width: 360px) {
+@media (min-top: 1000px){
+  .sidebar{
+   opacity: 0%!important;
+  }}
+
+@media (max-width: 460px) {
 .frame-5 {
   top: 140px!important;
 	}
 .sp-container h2 {
 	font-size: 80px!important;
-	}		
+	}
 .sp-container h4{
     font-size: 22px!important;
 	}
@@ -58,10 +85,11 @@ html {
 	animation: blurFadeIn 1s ease-in 1s backwards;
 	color: transparent;
 	text-shadow: 0px 0px 1px #fff;
+
 }
 
 .bg-light{
-  position: fixed!important;
+  position: absolute!important;
     top: 10px!important;
     z-index: 111;
 }
@@ -80,6 +108,7 @@ z-index: 33;
 
 .dropdown-toggle{
   padding: .5rem 1rem;
+  color: white!important;
 }
 
 .tex{
@@ -94,6 +123,13 @@ z-index: 33;
 .tex2 {
   color: white;
   margin: 5%;
+  -webkit-animation: blurFadeIn 12s ease-in 1s backwards;
+  -moz-animation: blurFadeIn 12s ease-in 1s backwards;
+  -ms-animation: blurFadeIn 12s ease-in 1s backwards;
+  animation: blurFadeIn 12s ease-in 1s backwards;
+  text-shadow: 0px 0px 1px #fff;
+
+
 }
 
 .tex3{
@@ -106,18 +142,35 @@ z-index: 33;
 }
 
 .con{
-  border: 2px solid;
+  border: 2px solid!important;
   padding: 10px;
   margin: 0 -20%;
   max-width: 500px;
+  -webkit-animation: blurFadeIn 12s ease-in 1s backwards;
+  -moz-animation: blurFadeIn 12s ease-in 1s backwards;
+  -ms-animation: blurFadeIn 12s ease-in 1s backwards;
+  animation: blurFadeIn 12s ease-in 1s backwards;
+  text-shadow: 0px 0px 1px #fff;
+
+  animation-iteration-count: infinite;
       }
 
 .con2{
     margin: 0 0%;
+    -webkit-animation: blurFadeIn 2s ease-in 1s backwards;
+    -moz-animation: blurFadeIn 2s ease-in 1s backwards;
+    -ms-animation: blurFadeIn 2s ease-in 1s backwards;
+    animation: blurFadeIn 2s ease-in 1s backwards;
+    text-shadow: 0px 0px 1px #fff;
 }
 
 .hoof{
     margin: 0 -19%;
+    -webkit-animation: blurFadeIn 1s ease-in 1s backwards;
+    -moz-animation: blurFadeIn 1s ease-in 1s backwards;
+    -ms-animation: blurFadeIn 1s ease-in 1s backwards;
+    animation: blurFadeIn 1s ease-in 1s backwards;
+    text-shadow: 0px 0px 1px #fff;
 }
 
 
@@ -238,9 +291,10 @@ font-size: 300%!important;
 	-ms-animation-delay: 9s;
 	animation-delay: 9s;
 }
-.sp-container h2.frame-5 {
+margin-left: 40%;
+.frame-5 {
   opacity: 90%;
-  top: 275px;
+  top: 275px!important;
 	-webkit-animation: none;
 	-moz-animation: none;
 	-ms-animation: none;
@@ -248,7 +302,8 @@ font-size: 300%!important;
 	color: transparent;
 	text-shadow: 0px 0px 1px #fff;
 }
-.sp-container h2.frame-5 span {
+.frame-5 span {
+  top: 275px!important;
 	-webkit-animation: blurFadeIn 3s ease-in 12s backwards;
 	-moz-animation: blurFadeIn 1s ease-in 12s backwards;
 	-ms-animation: blurFadeIn 3s ease-in 12s backwards;
@@ -257,6 +312,7 @@ font-size: 300%!important;
 	text-shadow: 0px 0px 1px #fff;
 }
 .sp-container h2.frame-5 span:nth-child(2) {
+  top: 275px!important;
 	-webkit-animation-delay: 13s;
 	-moz-animation-delay: 13s;
 	-ms-animation-delay: 13s;
@@ -290,6 +346,7 @@ font-size: 300%!important;
 	transform: scale(5);
 }
 .sp-circle-link {
+  z-index: 999!important;
       opacity: 50%;
 	position: absolute;
 	left: 50%;
@@ -316,6 +373,7 @@ font-size: 300%!important;
 	transform: scale(1) rotate(0deg);
 }
 .sp-circle-link:hover {
+
   opacity: 50%;
 	background: #85373b;
 	color: #fff;
