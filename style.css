@@ -29,11 +29,11 @@ html {
 }
 
 #sidebar {
-  color: black;
-    margin-top: 300px;
-    background-color: white;
+  color: white!important;
+    margin-top: 30%;
+    background-color: rgba(0,0,0,.075);
     height: 300px;
-    opacity: 50%;
+
     position: fixed;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
     animation-name: slideInLeft;
@@ -82,14 +82,25 @@ a{
 .sp-circle-link {
   bottom: 10px!important;
 }
-#sidebar {
+#sidebar  {
+  opacity: 50%!important;
+  background-color: white!important;
   transform: scale(0.6, 0.6);
   -ms-transform: scale(0.6, 0.6);
   -webkit-transform: scale(0.6, 0.6);
   -o-transform: scale(0.6, 0.6);
   -moz-transform: scale(0.6, 0.6);
 }
-
+.rond{
+  transform: scale(0.6, 0.6);
+  -ms-transform: scale(0.6, 0.6);
+  -webkit-transform: scale(0.6, 0.6);
+  -o-transform: scale(0.6, 0.6);
+  -moz-transform: scale(0.6, 0.6);
+}
+.navbar-toggler{
+  opacity: 0!important;
+}
 }
 
 @media (min-width: 1300px) {
@@ -138,7 +149,8 @@ z-index: 33;
 }
 
 .tex{
-
+  margin-left: 10px;
+      margin-right: 10px;
   margin-top: 1085px;
   background-color: #0a111f;
   height: 1000px;
@@ -178,7 +190,7 @@ z-index: 33;
   animation: blurFadeIn 5s ease-in 1s backwards;
   text-shadow: 0px 0px 1px #fff;
 
-  animation-iteration-count: infinite;
+
       }
 
 .con2{
@@ -192,14 +204,28 @@ z-index: 33;
 
 .hoof{
     margin: 0 -19%;
-    -webkit-animation: blurFadeIn 1s ease-in 1s backwards;
-    -moz-animation: blurFadeIn 1s ease-in 1s backwards;
-    -ms-animation: blurFadeIn 1s ease-in 1s backwards;
-    animation: blurFadeIn 1s ease-in 1s backwards;
+    -webkit-animation: blurFadeIn 15s ease-in 1s backwards;
+    -moz-animation: blurFadeIn 15s ease-in 1s backwards;
+    -ms-animation: blurFadeIn 15s ease-in 1s backwards;
+    animation: blurFadeIn 15s ease-in 1s backwards;
     text-shadow: 0px 0px 1px #fff;
 }
 
+.active{
+  opacity: 100%;
 
+}
+
+.transform{
+
+  -webkit-animation: blurFadeIn 3s ease-in 1s backwards;
+  -moz-animation: blurFadeIn 3s ease-in 1s backwards;
+  -ms-animation: blurFadeIn 3s ease-in 1s backwards;
+  animation: blurFadeIn 3s ease-in 1s backwards;
+  text-shadow: 0px 0px 1px #fff;
+
+
+}
 
 .bg-light {
   background: rgba(0,0,0,0.1)!important;
