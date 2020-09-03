@@ -17,23 +17,14 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="ani.js"></script>
+    <!-- <script type="text/javascript" src="ani.js"></script> -->
 
   <body>
 
-    <h1>Here you can change the content of the webpage.</h1>
+    <h1 style="padding: 50px;" >Here you can change the content of the webpage.</h1>
 
 <script type="text/javascript">
-function changeContent() {
- let newText = document.getElementById("txtMsg").value;
-    document.getElementById("new").innerHTML = newText ;
-  localStorage.newT = newText;
 
-  let newTitle = document.getElementById("txtTitle").value;
-     document.getElementById("title").innerHTML = newTitle ;
-   localStorage.newTit = newTitle;
-
-}
 </script>
   <form method="post" >
      <div class="row">
@@ -60,6 +51,17 @@ function changeContent() {
 
    document.getElementById("new").innerHTML=localStorage.something;
    document.getElementById("title").innerHTML= localStorage.something2;
+
+   function changeContent() {
+    let newText = document.getElementById("txtMsg").value;
+       document.getElementById("new").innerHTML = newText ;
+     localStorage.newT = newText;
+
+     let newTitle = document.getElementById("txtTitle").value;
+        document.getElementById("title").innerHTML = newTitle ;
+      localStorage.newTit = newTitle;
+     window.location.replace("./index.html");
+   }
    </script>
 
 
