@@ -13,7 +13,10 @@
 
   </head>
   <body>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="ani.js"></script>
@@ -22,21 +25,21 @@
     <nav id="sidebar" class="sidebar">
 
     <ul class="list-unstyled components mb-5">
-    <li class="active">
-    <a style="font-size: 250%;" href="#"><span class="fa fa-home"></span> </a>
-    </li>
-    <li>
-    <a id="12" type="button" style="font-size: 250%; padding-left: 5px;" href="#section02"><span class="fa fa-user"></span> </a>
-    </li>
-    <li>
-    <a  id="13"  type="button" style="font-size: 250%;" href="#section03"><span class="fa fa-sticky-note"></span> </a>
-    </li>
-    <li>
-    <a style="font-size: 250%;" href="#"><span class="fa fa-archive"></span> </a>
-    </li>
-    <li>
-    <a style="font-size: 250%;" href="#"><span class="fa fa-paper-plane"></span> </a>
-    </li>
+        <li class="active">
+            <a id="11" style="font-size: 250%;" href="#"><span class="fa fa-home"></span> </a>
+        </li>
+        <li>
+            <a id="12" type="button" style="font-size: 250%; padding-left: 5px;" href="#"><span class="fa fa-user"></span> </a>
+        </li>
+        <li>
+            <a  id="13"  type="button" style="font-size: 250%;" href="#section03"><span class="fa fa-sticky-note"></span> </a>
+        </li>
+        <li>
+            <a style="font-size: 250%;" href="#"><span class="fa fa-archive"></span> </a>
+        </li>
+        <li>
+            <a style="font-size: 250%;" href="#"><span class="fa fa-paper-plane"></span> </a>
+        </li>
     </ul>
     </nav>
 
@@ -49,27 +52,27 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link white" href="#">Home <span class="sr-only">(current)</span></a>
+            <a id="10" class="nav-link white" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a  id="14" type="button" class="nav-link" href="#section02">Features</a>
+            <a  id="14" type="button" class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a  id="15"  type="button" class="nav-link" href="#section03">Contact</a>
+            <a  id="15"  type="button" class="nav-link" href="#">Contact</a>
           </li>
 
      <div class="dropdown">
         <a class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Sign in
        </a>
-             <form class="dropdown-menu p-4" action="https://robensasje.herokuapp.com/signin">
+             <form class="dropdown-menu p-4"  id="form_id" method="post" name="myform">
       <div class="form-group">
-        <label for="exampleDropdownFormEmail2">Email address</label>
-        <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+        <label for="exampleDropdownFormEmail2">Username</label>
+        <input type="text"  name="username" id="username" class="form-control"  placeholder="User">
       </div>
       <div class="form-group">
         <label for="exampleDropdownFormPassword2">Password</label>
-        <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+        <input type="password" class="form-control"   name="password" id="password"  placeholder="Password">
       </div>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" id="dropdownCheck2">
@@ -77,50 +80,58 @@
           Remember me
         </label>
       </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button type="button" class="btn btn-primary"  value="Login" id="submit" onclick="validate()">Sign in</button>
        </form>
+
        </div>
      </div>
 </nav>
 
 
 
-    <div class="tex" id="section02">
+    <div class="tex transform" id="section02">
       <div class="tex3">
-    <h1 class="hoof transform">How does it work</h1>
-     <p class="con"> You tell me what you want and i will make it. Remenber this is just a simple example.
-     If you want to see more, let me know. I love to make a website look like an artwork. All content is custom, pics included.
-     One of a kind!</p>
+    <h1 class="hoof transform" id="hoof1">How does it work</h1>
+         <p class="con" id="con1" > You tell me what you want and i will make it. Remenber this is just a simple example.
+         If you want to see more, let me know. I love to make a website look like an artwork. All content is custom, pics included.
+         One of a kind!</p>
       <div class="tex2" ><h1>Why this design</h1>
-       <p class="con2"> This design give the user the freedom to navigate your site by scrolling or use the navbar.
-        On a mobile device this works great. You do not have to push buttons to see the entire website and it looks awesome.
-         A nice looking and easy to use, fast website is a must. For a few $ this can be yours.
-
+         <p class="con2"> This design is based on animation and easy to editable. Go to sign-in and use Admim - Admin. After your changes simply go back one page.
+          Only animation, No more scrolling, Great on mobile. You do not have to push buttons to see the entire website and it looks awesome.
+           A nice looking and easy to use, fast website is a must. For a few $ this can be yours.
        </p>
 
     </div>
-    <a class=" l" class="" href="#" >Scroll</span></a>
+   <script type="text/javascript">
+     let txtMsg = document.getElementById("con1").innerHTML;
+     localStorage.something = txtMsg
+     document.getElementById("con1").innerHTML=  localStorage.newT;
+
+     let txtTitle = document.getElementById("hoof1").innerHTML;
+     localStorage.something2 = txtTitle
+     document.getElementById("hoof1").innerHTML=  localStorage.newTit;
+   </script>
 
   </div>
  </div>
 </div>
 
 <div class="sp-container">
-	<div class="sp-content">
-		<div class="sp-globe"></div>
-		<h2 class="frame-1"><small>ԵօɾԵմցɑ</small></h2>
-		<h2 class="frame-2">Beautiful Clear Design</h2>
-		<h2 class="frame-3">Mobile Friendly</h2>
-		<h2 class="frame-4">Try it!</h2>
-    <h2 class="frame-4"></h2>
-    <h2 class="frame-5">
-      <span><h2>Sea turtle</h2> </span>
+	<div class="sp-content ">
+		<div class="sp-globe "></div>
+  		<h2 class="frame-1"><small>ԵօɾԵմցɑ</small></h2>
+  		<h2 class="frame-2">Beautiful Clear Design</h2>
+  		<h2 class="frame-3">Mobile Friendly</h2>
+  		<h2 class="frame-4">Try it!</h2>
+      <h2 class="frame-4"></h2>
+    <h2 class="frame-5 transform">
+      <span><h2>Cactus</h2> </span>
        <span><h4>The seven existing species of sea turtles are the green sea turtle,
           loggerhead sea turtle, Kemp's ridley sea turtle, olive ridley sea turtle, hawksbill sea turtle, flatback sea turtle, and leatherback sea turtle.</h4></span>
     </h2>
     </div>
     </div>
-    <div class="container contact-form" id="section03" style="top: 2250px; position: inherit!important;">
+    <div class="container contact-form transform" id="section03" style="top: 2250px; position: inherit!important;">
 
             <form method="post" action="mailto:robensasje@gmail.com">
 
@@ -151,23 +162,19 @@
 
 
    <section class="main">
-   	<a class="sp-circle-link rond" class="arrow-wrap" href="#section02" style="z-index: 999!important;">Scroll</span></a>
+   	<a class="sp-circle-link rond" class="arrow-wrap" href="https://www.fiverr.com/rob_sas?" style="z-index: 999!important; font-size: 75%;">®_ⓢ</span></a>
         </body>
 
         <!-- Default Statcounter code for fiverr
 https://robensam17.github.io/preview/index.html? -->
 <script type="text/javascript">
-var sc_project=12384964;
-var sc_invisible=1;
-var sc_security="ef4dbcab";
+    var sc_project=12384964;
+    var sc_invisible=1;
+    var sc_security="ef4dbcab";
 </script>
 <script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="real time web
-analytics" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12384964/0/ef4dbcab/1/"
-alt="real time web analytics"></a></div></noscript>
-<!-- End of Statcounter Code -->
+      src="https://www.statcounter.com/counter/counter.js"
+      async>
+</script>
+
 </html>

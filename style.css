@@ -1,11 +1,9 @@
 body {
-
-    background: url(images/2.jpg) no-repeat center center fixed;
+    background: url(images/4.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 small {
@@ -16,9 +14,15 @@ small {
   -o-transform: scale(0.8, 0.8); /* Opera */
   -moz-transform: scale(0.8, 0.8); /* Firefox */
 }
-html {
+/* html {
   height:250%;
+} */
+
+
+.show{
+  width: 200px!important;
 }
+
 
 .icon{
   font-size: 250%;
@@ -92,6 +96,7 @@ a{
   -moz-transform: scale(0.6, 0.6);
 }
 .rond{
+  opacity: 0!important;
   transform: scale(0.6, 0.6);
   -ms-transform: scale(0.6, 0.6);
   -webkit-transform: scale(0.6, 0.6);
@@ -100,6 +105,9 @@ a{
 }
 .navbar-toggler{
   opacity: 0!important;
+}
+.tex{
+  margin-left: 21%!important;
 }
 }
 
@@ -148,32 +156,52 @@ z-index: 33;
   color: white!important;
 }
 
+.transform {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.transform-active {
+  /* margin-left: 0px!important; */
+  opacity: 1!important;
+  /* background-color: #45CEE0; */
+  /* height: 200px;
+  width: 200px; */
+}
+
+
 .tex{
-  margin-left: 10px;
+  opacity: 0;
+  margin-left: 60%;
+    margin-top: 100px;
+
       margin-right: 10px;
-  margin-top: 1085px;
-  background-color: #0a111f;
+
+  /* background-color: #0a111f;
   height: 1000px;
   color: white;
-  padding: 50px 30px 0 100px;
+  padding: 50px 30px 0 100px; */
 
 }
 .tex2 {
   color: white;
   margin: 5%;
-  -webkit-animation: blurFadeIn 12s ease-in 1s backwards;
+  /* -webkit-animation: blurFadeIn 12s ease-in 1s backwards;
   -moz-animation: blurFadeIn 12s ease-in 1s backwards;
   -ms-animation: blurFadeIn 12s ease-in 1s backwards;
   animation: blurFadeIn 12s ease-in 1s backwards;
-  text-shadow: 0px 0px 1px #fff;
+  text-shadow: 0px 0px 1px #fff; */
 
 
 }
 
 .tex3{
-  margin-top: 1085px;
-  background-color: #233134;
-  height: 1000px;
+  /* margin-top: 1085px; */
+  /* background-color: #233134; */
+  /* height: 1000px; */
   color: white;
   margin:  5% 15%;
 
@@ -184,48 +212,34 @@ z-index: 33;
   padding: 10px;
   margin: 0 -20%;
   max-width: 500px;
-  -webkit-animation: blurFadeIn 1s ease-in 1s backwards;
+  /* -webkit-animation: blurFadeIn 1s ease-in 1s backwards;
   -moz-animation: blurFadeIn 5s ease-in 1s backwards;
   -ms-animation: blurFadeIn 5s ease-in 1s backwards;
   animation: blurFadeIn 5s ease-in 1s backwards;
-  text-shadow: 0px 0px 1px #fff;
+  text-shadow: 0px 0px 1px #fff; */
 
 
       }
 
 .con2{
     margin: 0 0%;
-    -webkit-animation: blurFadeIn 2s ease-in 1s backwards;
+    /* -webkit-animation: blurFadeIn 2s ease-in 1s backwards;
     -moz-animation: blurFadeIn 2s ease-in 1s backwards;
     -ms-animation: blurFadeIn 2s ease-in 1s backwards;
     animation: blurFadeIn 2s ease-in 1s backwards;
-    text-shadow: 0px 0px 1px #fff;
+    text-shadow: 0px 0px 1px #fff; */
 }
 
 .hoof{
     margin: 0 -19%;
-    -webkit-animation: blurFadeIn 15s ease-in 1s backwards;
+    /* -webkit-animation: blurFadeIn 15s ease-in 1s backwards;
     -moz-animation: blurFadeIn 15s ease-in 1s backwards;
     -ms-animation: blurFadeIn 15s ease-in 1s backwards;
     animation: blurFadeIn 15s ease-in 1s backwards;
-    text-shadow: 0px 0px 1px #fff;
+    text-shadow: 0px 0px 1px #fff; */
 }
 
-.active{
-  opacity: 100%;
 
-}
-
-.transform{
-
-  -webkit-animation: blurFadeIn 3s ease-in 1s backwards;
-  -moz-animation: blurFadeIn 3s ease-in 1s backwards;
-  -ms-animation: blurFadeIn 3s ease-in 1s backwards;
-  animation: blurFadeIn 3s ease-in 1s backwards;
-  text-shadow: 0px 0px 1px #fff;
-
-
-}
 
 .bg-light {
   background: rgba(0,0,0,0.1)!important;
@@ -272,6 +286,7 @@ h5{
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
 .container {
+  opacity: 0;
   z-index: -33!important;
 	width: 100%;
 	position: absolute!important;
@@ -299,6 +314,7 @@ h1.main, p.demos {
 	background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 35%, rgba(0, 0, 0, 0.7));
 }
 .sp-content {
+
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -351,9 +367,9 @@ font-size: 300%!important;
 }
 
 .frame-5 {
+  opacity: 0;
   	font-size: 100px;
 
-  opacity: 90%;
 
 	-webkit-animation: none;
 	-moz-animation: none;
@@ -368,6 +384,7 @@ font-size: 300%!important;
   -moz-transform: scale(0.6, 0.6);
 }
 .frame-5 span {
+
   top: 275px!important;
 
 	-webkit-animation: blurFadeIn 3s ease-in 12s backwards;

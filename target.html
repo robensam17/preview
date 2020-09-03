@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Edit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>This can be your website</title>
+
+  </head>
+  <body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="ani.js"></script>
+
+  <body>
+
+    <h1>Here you can change the content of the webpage.</h1>
+
+<script type="text/javascript">
+function changeContent() {
+ let newText = document.getElementById("txtMsg").value;
+    document.getElementById("new").innerHTML = newText ;
+  localStorage.newT = newText;
+
+  let newTitle = document.getElementById("txtTitle").value;
+     document.getElementById("title").innerHTML = newTitle ;
+   localStorage.newTit = newTitle;
+
+}
+</script>
+  <form method="post" >
+     <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                <div id="new" style="padding: 50px;">
+                </div>
+                <div id="title" style="padding: 50px;">
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <textarea id="txtMsg" name="txtMsg" class="form-control" placeholder= newText style="width: 100%; height: 150px;"></textarea>
+                  <textarea id="txtTitle" name="txtMsg" class="form-control" placeholder= newTitle style="width: 100%; height: 150px;"></textarea>
+                  <input  class="btn btn-dark" value="Change Text"  type="button" class="btn btn-primary"  value="Login" id="submit" onclick="changeContent()"/>
+
+              </div>
+          </div>
+      </div>
+  </form>
+
+   <script type="text/javascript">
+
+   document.getElementById("new").innerHTML=localStorage.something;
+   document.getElementById("title").innerHTML= localStorage.something2;
+   </script>
+
+
+
+  </body>
+</html>
