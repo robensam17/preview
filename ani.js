@@ -3,6 +3,8 @@ $(document).ready(function() {
     $('.frame-5').addClass('transform-active');
     $('.container').removeClass('transform-active');
     $('.tex').removeClass('transform-active');
+    $('.newStyle').addClass('disp');
+      $('.newStyle').removeClass('ndisp');
 });
 });
 
@@ -11,6 +13,8 @@ $(document).ready(function() {
     $('.frame-5').addClass('transform-active');
     $('.container').removeClass('transform-active');
     $('.tex').removeClass('transform-active');
+    $('.newStyle').addClass('disp');
+      $('.newStyle').removeClass('ndisp');
 });
 });
 
@@ -19,6 +23,8 @@ $(document).ready(function() {
     $('.tex').addClass('transform-active');
     $('.container').removeClass('transform-active');
     $('.frame-5').removeClass('transform-active');
+    $('.newStyle').addClass('disp');
+    $('.newStyle').removeClass('ndisp');
 });
 });
 
@@ -28,6 +34,8 @@ $(document).ready(function() {
     $('.container').addClass('transform-active');
       $('.tex').removeClass('transform-active');
         $('.frame-5').removeClass('transform-active');
+        $('.container').addClass('disp');
+        $('.newStyle').addClass('ndisp');
 });
 });
 
@@ -36,6 +44,8 @@ $(document).ready(function() {
     $('.tex').addClass('transform-active');
     $('.container').removeClass('transform-active');
       $('.frame-5').removeClass('transform-active');
+      $('.newStyle').addClass('disp');
+        $('.newStyle').removeClass('ndisp');
 });
 });
 
@@ -45,6 +55,8 @@ $(document).ready(function() {
     $('.container').addClass('transform-active');
       $('.tex').removeClass('transform-active');
         $('.frame-5').removeClass('transform-active');
+        $('.container').addClass('disp');
+        $('.newStyle').addClass('ndisp');
 });
 });
 

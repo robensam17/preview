@@ -18,6 +18,29 @@ small {
   height:250%;
 } */
 
+.newStyle{
+  position: fixed;
+  top: 525px;
+  opacity: 95%;
+  margin-left: 35%;
+  border: 5px solid;
+  color: white;
+  radius: 50%;
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  -ms-transition: all 5s ease;
+  transition: all 5s ease;
+}
+
+.disp {
+   display: block!important;
+}
+.ndisp{
+
+  display: none!important;
+}
+
 
 .show{
   width: 200px!important;
@@ -74,6 +97,11 @@ a{
   }}
 
 @media (max-width: 460px) {
+  .newStyle{
+ top: 800px!important;
+ position: relative!important;
+
+  }
 .frame-5 {
   top: 140px!important;
 	}
@@ -286,6 +314,7 @@ h5{
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
 .container {
+  display: none;
   opacity: 0;
   z-index: -33!important;
 	width: 100%;
@@ -413,6 +442,7 @@ font-size: 300%!important;
 	animation-delay: 14s;
 }
 .sp-globe {
+
   opacity: 50%;
 	position: absolute;
 	width: 282px;
@@ -444,7 +474,7 @@ font-size: 300%!important;
 	line-height: 100px;
 	width: 100px;
 	height: 100px;
-	background: #fff;
+	background: rgb(239 246 247 / 75%);
 	color: #3f1616;
 	font-size: 25px;
 	-webkit-border-radius: 50%;
