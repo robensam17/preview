@@ -21,9 +21,9 @@ small {
 .newStyle{
   position: fixed;
   top: 525px;
-  opacity: 95%;
+  opacity: 50%;
   margin-left: 35%;
-  border: 5px solid;
+  border: 0.5px solid;
   color: white;
   radius: 50%;
   -webkit-transition: all 5s ease;
