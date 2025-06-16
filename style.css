@@ -21,10 +21,10 @@ small {
 .newStyle{
   position: fixed;
   top: 525px;
-  opacity: 50%;
+  opacity: 25%;
   margin-left: 35%;
-  border: 0.5px solid;
-  color: white;
+  border: 1px solid;
+  color: black;
   radius: 50%;
   -webkit-transition: all 5s ease;
   -moz-transition: all 5s ease;
