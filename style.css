@@ -36,11 +36,12 @@ small {
 
 .disp {
   display: block!important;
-  -webkit-transition: all 5s ease!important;
-  -moz-transition: all 5s ease!important;
-  -o-transition: all 5s ease!important;
-  -ms-transition: all 5s ease!important;
-  transition: all 5s ease!important;
+    animation-name: slideInLeft;
+    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+    -o-transform: scale(0.8, 0.8); /* Opera */
+    -moz-transform: scale(0.8, 0.8); /* Firefox */
 }
 .ndisp{
 
