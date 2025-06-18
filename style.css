@@ -21,7 +21,7 @@ small {
 .newStyle{
   position: fixed;
   top: 525px;
-  opacity: 0%;
+  opacity: 50%;
   margin-left: 35%;
   border: 1px solid;
   color: black;
