@@ -56,7 +56,8 @@ $(document).ready(function() {
       $('.tex').removeClass('transform-active');
         $('.frame-5').removeClass('transform-active');
         $('.container').addClass('disp');
-        $('.newStyle').addClass('ndisp');
+        $('.newStyle').addClass('disp');
+        $('.newStyle').removeClass('ndisp');
 });
 });
 
