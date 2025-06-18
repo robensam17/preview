@@ -44,7 +44,8 @@ $(document).ready(function() {
     $('.tex').addClass('transform-active');
     $('.container').removeClass('transform-active');
       $('.frame-5').removeClass('transform-active');
-      $('.newStyle').removeClass('ndisp');
+      $('.newStyle').addClass('ndisp');
+      $('.newStyle').removeClass('disp');
 });
 });
 
