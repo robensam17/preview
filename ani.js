@@ -3,8 +3,8 @@ $(document).ready(function() {
     $('.frame-5').addClass('transform-active');
     $('.container').removeClass('transform-active');
     $('.tex').removeClass('transform-active');
-    $('.newStyle').addClass('disp');
-      $('.newStyle').removeClass('ndisp');
+    $('.newStyle').addClass('ndisp');
+      $('.newStyle').removeClass('disp');
 });
 });
 
