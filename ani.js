@@ -57,7 +57,7 @@ $(document).ready(function() {
         $('.frame-5').removeClass('transform-active');
         $('.container').addClass('disp');
         $('.newStyle').addClass('disp');
-        $('.newStyle').removeClass('ndisp');
+         $('.newStyle').removeClass('ndisp');
 });
 });
 
