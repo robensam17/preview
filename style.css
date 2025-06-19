@@ -20,7 +20,7 @@ small {
 
 .newStyle{
   position: fixed;
-  top: 25px;
+  top: 30px;
   opacity: 80%;
   margin-left: 35%;
   border: 1px solid;
@@ -46,7 +46,12 @@ small {
 .ndisp{
 
   display: none!important;
-
+    animation-name: slideInLeft;
+    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+    -o-transform: scale(0.8, 0.8); /* Opera */
+    -moz-transform: scale(0.8, 0.8); /* Firefox */
 }
 
 
